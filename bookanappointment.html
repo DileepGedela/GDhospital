@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<body class="bg-light">
+<div class="full-height">
+        
+	<div class="top">
+		<div class="topdiv">
+			Contact Us +91 8125321402 / dileepgedela17@gmail.com
+		</div>
+	</div>
+	
+	<div class="logo">
+		<div class="logodiv">
+			<table>
+				<tr>
+					<td class="hospital" width="700px"; style="font-size:50px; font-family:forte;"> <font color="#2FA5EB"> GD Hospital  </font>   </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="home.html">HOME</a> 
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">DOCTORS</a> 
+							<a href="contact.html">CONTACT US</a>
+							<a href="loginpage.html">LOGIN</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+</div>
+    <div class="container mt-5">
+        <div class="card w-75 mx-auto">
+            <div class="card-header">
+                <h2 class="text-center">book appointment</h2>
+            </div>
+            <div class="card-body">
+                <form id="registrationForm" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="disease">Disease:</label>
+                            <input name="disease" type="text" id="disease" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctor">Department:
+                            </label>
+                                <select id="department" name="department" class="form-control" onmouseout="outer()" required>
+                                <option value="" selected disabled>Select Department</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="Dentistry">Dentistry</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Oncology">Oncology</option>
+                                    <option value="Dermatology">Dermatology</option>
+                                    <option value="Psychiatry">Psychiatry</option>
+                                    <option value="Gastroenterology">Gastroenterology</option>
+                                    <option value="Orthopedics">Orthopedics</option>
+                                    <option value="General Surgeon">General Surgeon</option>
+                                    <option value="Ophthalmology">Ophthalmology</option>
+                                    
+                                </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                                <label for="disease">Doctor:</label>
+                                <input name="doctor" type="text" id="doctor" class="form-control" required>
+                        </div>
+                    </div>
+                        <input name="submit" type="submit" value="submit"class="btn btn-success btn-block">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="registration.js">
+    </script>
+    <script>
+        function outer(){
+            var doctors={"Neurology":"Kristin Waldron","Dentistry":"Amrita Gogia","Cardiology":"Rajesh Kanna","Oncology":"Pushpinder Gulia","Dermatology":"Ravichandran","Psychiatry":"Santosh Bangar","Gastroenterology":"Pawan Rawal","Orthopedics":"Rajeev Verma","General Surgeon":"Naveen Kumar","Ophthalmology":"S.Bharti"};
+            var a=document.getElementById("department");
+            var v=a.value;
+            var p=doctors[v];
+            document.getElementById("doctor").value=p;
+        }
+    </script>
+</body>
+</html>
