@@ -5,4 +5,3 @@
 ![Image Alt Text](img/5.png)
 ![Image Alt Text](img/6.png)
 ![Image Alt Text](img/7.png)
-![Image Alt Text](img/8.png)
